@@ -229,6 +229,32 @@
       }
     },
     {
+      "name": "terraform-ls",
+      "description": "Official HashiCorp Terraform language server for infrastructure as code",
+      "version": "1.0.0",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "source": "./plugins/terraform-ls",
+      "category": "development",
+      "strict": false,
+      "lspServers": {
+        "terraform": {
+          "command": "terraform-ls",
+          "args": ["serve"],
+          "extensionToLanguage": {
+            ".tf": "terraform",
+            ".tfvars": "terraform-vars",
+            ".tfstack.hcl": "terraform-stack",
+            ".tfcomponent.hcl": "terraform-stack",
+            ".tfdeploy.hcl": "terraform-deploy",
+            ".tfquery.hcl": "terraform-search"
+          }
+        }
+      }
+    },
+    {
       "name": "agent-sdk-dev",
       "description": "Development kit for working with the Claude Agent SDK",
       "author": {
