@@ -318,6 +318,17 @@
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/code-review"
     },
     {
+      "name": "code-simplifier",
+      "description": "Agent that simplifies and refines code for clarity, consistency, and maintainability while preserving functionality. Focuses on recently modified code.",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "source": "./plugins/code-simplifier",
+      "category": "productivity",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier"
+    },
+    {
       "name": "explanatory-output-style",
       "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
       "author": {
